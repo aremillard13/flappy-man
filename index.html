@@ -1,1 +1,111 @@
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<div id="game">
+  <canvas id="canvas"></canvas>
+
+  <!-- ============================= -->
+
+  <!-- START SCREEN -->
+
+  <!-- ============================= -->
+
+  <div id="startScreen" class="screen">
+    <h1>Flap, Baby!</h1>
+    <p>Don't Finish Too Fast</p>
+    <button id="startButton">START</button>
+  </div>
+
+  <!-- ============================= -->
+
+  <!-- NORMAL GAME OVER -->
+
+  <!-- ============================= -->
+
+  <div id="gameOver" class="screen hidden">
+
+```
+<h1>Game Over!</h1>
+
+<p>
+  Score:
+  <strong id="finalScore">0</strong>
+</p>
+
+<p id="scoreMessage" class="score-message"></p>
+
+<div class="leaderboard-title">
+  TOP 5
+</div>
+
+<div id="gameOverLeaderboard" class="leaderboard">
+  <div class="loading">LOADING...</div>
+</div>
+
+<button id="restartButton">
+  PLAY AGAIN
+</button>
+```
+
+  </div>
+
+  <!-- ============================= -->
+
+  <!-- HIGH SCORE ENTRY -->
+
+  <!-- ============================= -->
+
+```
+<div id="highScoreScreen" class="screen hidden">
+  <div class="high-score-card">
+
+    <h1>YAS KING! 👑 HIGH SCORE!</h1>
+
+    <p>
+      Score:
+      <strong id="highScoreValue">0</strong>
+    </p>
+
+    <input
+      id="initialsInput"
+      maxlength="3"
+      autocomplete="off"
+      spellcheck="false"
+      placeholder="AAA"
+    >
+
+    <button id="submitScoreButton">
+      SUBMIT
+    </button>
+
+  </div>
+</div>
+
+  <!-- ============================= -->
+
+  <!-- LEADERBOARD AFTER SUBMISSION -->
+
+  <!-- ============================= -->
+
+ <div id="leaderboardScreen" class="screen hidden">
+  <div class="leaderboard-card">
+
+    <h1>🏆TOP 5🏆</h1>
+
+    <div id="leaderboard"></div>
+
+    <button id="leaderboardRestartButton">
+      PLAY AGAIN
+    </button>
+
+  </div>
+</div>
+
+  <!-- ============================= -->
+
+  <!-- SCORE -->
+
+  <!-- ============================= -->
+
+  <div id="score">0</div>
+
+</div>
 
